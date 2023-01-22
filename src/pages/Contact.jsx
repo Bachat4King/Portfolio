@@ -1,18 +1,13 @@
 import { Form, Button, Container, Col } from "react-bootstrap";
-import {Helmet} from 'react-helmet'
 
 export default function Contact() {
   const handleSubmit = (event) => {
     event.preventDefault();
-    // add your form submission logic here
-    console.log("Form Submitted");
   };
 
   return (
     <>
-      <Helmet>
-        <title>Bastian Silva | Contact</title>
-      </Helmet>
+
       <Container>
         <Col md={{ span: 6, offset: 3 }}>
           <Form onSubmit={handleSubmit}>

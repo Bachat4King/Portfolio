@@ -1,13 +1,9 @@
 import { Container, Card, Row, Col } from "react-bootstrap";
 import JumboTron from "../components/JumboTron";
-import {Helmet} from 'react-helmet'
 
 export default function Home() {
   return (
     <>
-    <Helmet>
-      <title>Bastian Silva | Home</title>
-    </Helmet>
       
       <JumboTron/>
 
@@ -17,7 +13,7 @@ export default function Home() {
             <Card>
               <Card.Body>
                 <Card.Title>About Me</Card.Title>
-                <Card.Text className="text-justify">
+                <Card.Text>
                   I'm a Test Automation Engineer with experience in automated UI
                   testing with Selenium using Java and Python, API testing with
                   Postman, Rest Assured, Requests, and Axios. I also have
