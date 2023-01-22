@@ -4,9 +4,9 @@ import MyNav from '../components/NavBar'
 
 export default function Root() {
   return (
-    <div>
+    <div className="d-flex flex-column h-100">
       <MyNav />
-      <main>
+      <main className="flex-grow-1">
         <Outlet/>
       </main>
       <Footer />

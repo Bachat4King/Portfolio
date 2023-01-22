@@ -1,9 +1,13 @@
 import { Container, Card, Row, Col } from "react-bootstrap";
 import JumboTron from "../components/JumboTron";
+import {Helmet} from 'react-helmet'
 
 export default function Home() {
   return (
     <>
+    <Helmet>
+      <title>Bastian Silva | Home</title>
+    </Helmet>
       
       <JumboTron/>
 
@@ -31,19 +35,16 @@ export default function Home() {
               <Card.Body>
                 <Card.Title>Main Skills</Card.Title>
                 <Card.Text>
-                  <ul>
                     <li>Python</li>
                     <li>Java</li>
                     <li>Selenium</li>
                     <li>Playwright</li>
                     <li>Jenkins</li>
                     <li>Postman</li>
-                  </ul>
                 </Card.Text>
               </Card.Body>
             </Card>
           </Col>
-
         </Row>
         
         <Row>
