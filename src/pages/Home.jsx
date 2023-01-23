@@ -1,51 +1,25 @@
 import { Container, Card, Row, Col } from "react-bootstrap";
 import JumboTron from "../components/JumboTron";
+import Image from "react-bootstrap/Image";
+import Experience from "../components/Experience";
+import About from "../components/About";
+import { projects } from "../data/projects";
+import Project from "../components/Project";
+import { experience } from "../data/experience";
 
 export default function Home() {
   return (
     <>
-      
-      <JumboTron/>
-
+      <JumboTron />
+      <About />
       <Container>
-        <Row>
-          <Col md={4}>
-            <Card>
-              <Card.Body>
-                <Card.Title>About Me</Card.Title>
-                <Card.Text>
-                  I'm a Test Automation Engineer with experience in automated UI
-                  testing with Selenium using Java and Python, API testing with
-                  Postman, Rest Assured, Requests, and Axios. I also have
-                  knowledge of Django, JavaScript, TypeScript, SQL, NoSQL,
-                  Docker, Jenkins, and GIT. I am always willing to learn new
-                  technologies, contribute knowledge, and accept challenges with
-                  interest and enthusiasm.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
+        {experience.map((item) => (
+          <Experience key={item.id} experience={item} />
+        ))}
 
-          <Col md={3}>
-            <Card>
-              <Card.Body>
-                <Card.Title>Main Skills</Card.Title>
-                <Card.Text>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>Selenium</li>
-                    <li>Playwright</li>
-                    <li>Jenkins</li>
-                    <li>Postman</li>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-        
-        <Row>
-
-        </Row>
+        {projects.map((project) => (
+          <Project key={project.id} project={project} />
+        ))}
       </Container>
     </>
   );

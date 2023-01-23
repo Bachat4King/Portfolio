@@ -7,7 +7,6 @@ export default function Contact() {
 
   return (
     <>
-
       <Container>
         <Col md={{ span: 6, offset: 3 }}>
           <Form onSubmit={handleSubmit}>
@@ -32,7 +31,6 @@ export default function Contact() {
                 placeholder="Your message here"
               />
             </Form.Group>
-
             <Button variant="primary" type="submit">
               Submit
             </Button>
