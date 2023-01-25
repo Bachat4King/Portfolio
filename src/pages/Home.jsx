@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <>
       <JumboTron />
-      <About />
       <Container>
+      <About />
         {experience.map((item) => (
           <Experience key={item.id} experience={item} />
         ))}

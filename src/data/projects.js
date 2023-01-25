@@ -30,7 +30,7 @@ export const projects = [
   },
   {
     id: 3,
-    name: "My Website",
+    name: "My Website (In Progress)",
     repoLink: "https://github.com/Bachat4King/Portfolio",
     achievements: [
       "About Me.",
