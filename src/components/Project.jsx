@@ -10,7 +10,7 @@ export default function Project({ project }) {
   return (
     <>
       <Row className="d-flex justify-content-center py-1">
-        <Col md={8}>
+        <Col md={7}>
           <Card>
             <Card.Body>
               <Card.Title className="text-center">
@@ -24,14 +24,12 @@ export default function Project({ project }) {
                   />
                 </a>
               </Card.Title>
-              <Card.Text>
-                <ListGroup numbered>
-                  {achievements.map((item) => (
-                    <ListGroup.Item as="li"> {item}</ListGroup.Item>
-                  ))}
-                  <strong>Tools used:</strong> {tools}
-                </ListGroup>
-              </Card.Text>
+              <ListGroup numbered>
+                {achievements.map((item, index) => (
+                  <ListGroup.Item key={index}> {item}</ListGroup.Item>
+                ))}
+                <strong>Tools used:</strong> {tools}
+              </ListGroup>
             </Card.Body>
           </Card>
         </Col>

@@ -10,8 +10,8 @@ export default function Footer() {
       <Container fluid className="bg-light text-center py-3">
         <Row>
           <Col>
-            {icons.map((icon) => (
-              <FooterIcon icon={icon} />
+            {icons.map((icon, index) => (
+              <FooterIcon key={index} icon={icon} />
             ))}
             <p>Copyright © Bastian Silva {currentYear}</p>
           </Col>

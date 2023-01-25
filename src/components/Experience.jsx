@@ -8,20 +8,18 @@ export default function Experience({ experience }) {
   return (
     <>
       <Row className="d-flex justify-content-center py-4">
-        <Col md={8}>
+        <Col md={7}>
           <Card>
             <Card.Body>
               <Card.Title className="text-center">{role}</Card.Title>
-              <Card.Text>
-                <p className="text-center">
-                  {company} {time}
-                </p>
-                <ListGroup>
-                  {achievements.map((item) => (
-                    <ListGroup.Item> {item} </ListGroup.Item>
-                  ))}
-                </ListGroup>
+              <Card.Text className="text-center">
+                {company} {time}
               </Card.Text>
+              <ListGroup>
+                {achievements.map((item, index) => (
+                  <ListGroup.Item key={index}> {item} </ListGroup.Item>
+                ))}
+              </ListGroup>
             </Card.Body>
           </Card>
         </Col>

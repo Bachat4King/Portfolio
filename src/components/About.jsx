@@ -6,7 +6,7 @@ export default function () {
   return (
     <>
       <Row className="d-flex justify-content-center">
-        <Col md={8}>
+        <Col md={7}>
           <Card>
             <Card.Body>
               <Card.Title className="text-center">About Me</Card.Title>
